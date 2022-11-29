@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Lora:wght@400;500;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  font-family: "Lora", serif;
+}
+
+header {
+  background: whitesmoke;
+  padding: 10px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+nav ul li a {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 500;
+}
+nav ul li a:hover {
+  background: rgb(161, 161, 161);
+  color: rgb(14, 14, 14);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: whitesmoke;
+}
+
+main {
+  padding: 20px;
+}
+
+main#home .users {
+  display: flex;
+  flex-wrap: wrap;
+}
+main#home .users > .card {
+  flex: 1 1 350px;
+  padding: 10px;
+  background: #f2f2f2;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+main#home .users > .card > a {
+  text-decoration: underline;
+}
+main#home .users > .card > img {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 10px;
+}
+
+/* Form */
+form {
+  max-width: 500px;
+  width: 100%;
+
+  margin: 20px auto;
+}
+form label {
+  margin-bottom: 10px;
+}
+form label,
+form label > span {
+  display: block;
+}
+form label > span {
+  padding: 5px 0px;
+}
+form label > input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+form label.is-invalid > * {
+  color: crimson;
+}
+form label.is-invalid > input {
+  border: 1px solid crimson;
+}
+form button.submit {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+/* Form */
